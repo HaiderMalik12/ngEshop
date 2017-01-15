@@ -5,7 +5,7 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { HeaderComponent } from './navbar/header.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
