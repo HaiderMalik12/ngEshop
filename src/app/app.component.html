@@ -1,9 +1,8 @@
-
-
 <div [ngSwitch]="getCurrentUrl()">
   <div *ngSwitchCase="'/dashboard'">
-    Hello Dashboard!!
-    <router-outlet></router-outlet>
+
+    <app-dashboard></app-dashboard>
+
   </div>
 
   <div *ngSwitchDefault>
