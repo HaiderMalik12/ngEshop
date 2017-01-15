@@ -12,12 +12,15 @@ import { ProductsComponent } from './products/products.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { HeaderComponent } from './header/header.component';
+import { UsersComponent } from './users/users.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 const appRoutes: Routes = [
   { path: 'products', component: ProductsComponent },
   { path: 'contact', component: ContactComponent},
-  { path: 'about', component: AboutComponent}
+  { path: 'about', component: AboutComponent},
+  { path: 'users', component: UsersComponent}
 ];
 
 @NgModule({
@@ -28,7 +31,9 @@ const appRoutes: Routes = [
     ProductsComponent,
     AboutComponent,
     ContactComponent,
-    HeaderComponent
+    HeaderComponent,
+    UsersComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
