@@ -1,10 +1,13 @@
 <div [ngSwitch]="getCurrentUrl()">
+
+  <!--If current Route is dashboard then render the dashboardPage -->
   <div *ngSwitchCase="'/dashboard'">
 
     <app-dashboard></app-dashboard>
 
   </div>
 
+  <!--Default Render this content-->
   <div *ngSwitchDefault>
 
     <app-navbar></app-navbar>
@@ -12,6 +15,9 @@
 
   </div>
 
+   <!--Content goes here-->
   <router-outlet></router-outlet>
+
+
   <app-footer *ngIf="getCurrentUrl() !== '/dashboard'"></app-footer>
 </div>
